@@ -3,27 +3,34 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+    width: 90%;
+    max-width: 1000px;
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 h1 {
     color: #1a73e8;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 h2 {
     color: #34a853;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 3px solid #ddd;
     padding-bottom: 10px;
+    margin-top: 30px;
 }
 
 ul {
@@ -33,18 +40,39 @@ ul {
 
 ul li {
     background: #f9f9f9;
-    margin: 8px 0;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .upcoming li {
-    border-left: 4px solid #1a73e8;
+    border-left: 5px solid #1a73e8;
 }
 
 .completed li {
-    border-left: 4px solid #34a853;
+    border-left: 5px solid #34a853;
 }
 
-/* Additional styling as needed */
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
