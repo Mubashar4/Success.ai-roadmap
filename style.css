@@ -1,6 +1,9 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
+    background-image: url('background-image-url.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-attachment: fixed;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -9,20 +12,22 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: auto;
 }
 
 .container {
     width: 90%;
     max-width: 1000px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.85); /* Light background with a blur effect */
+    backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center; /* Centering text */
 }
 
 h1 {
     color: #1a73e8;
-    text-align: center;
     margin-bottom: 40px;
 }
 
@@ -36,6 +41,7 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
+    text-align: left; /* Aligning list items to left */
 }
 
 ul li {
@@ -52,12 +58,8 @@ ul li:hover {
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.upcoming li {
+.upcoming li, .completed li {
     border-left: 5px solid #1a73e8;
-}
-
-.completed li {
-    border-left: 5px solid #34a853;
 }
 
 /* Responsive styling for smaller screens */
