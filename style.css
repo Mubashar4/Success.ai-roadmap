@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: red; /* Light blue background */
+    background-color: red !important;
     color: #333;
     line-height: 1.6;
     margin: 0;
